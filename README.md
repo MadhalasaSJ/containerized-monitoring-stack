@@ -7,6 +7,7 @@ This project implements a containerized monitoring stack using Docker, Prometheu
 ## Architecture
 
 ```bash
+
 System Metrics
       ↓
 Python Exporter (Flask + psutil)
@@ -16,17 +17,18 @@ Docker Container
 Prometheus (Metric Scraping)
       ↓
 Grafana (Visualization & Alerting)
+
 ```
 
 ## Features
 
 - Custom metrics exporter built using:
 
-* Flask
+  1. Flask
 
-* psutil
+  2. psutil
 
-* prometheus_client
+  3. prometheus_client
 
 - Dockerized application deployment
 
@@ -34,11 +36,11 @@ Grafana (Visualization & Alerting)
 
 - Grafana dashboard with:
 
-* CPU Usage (Time Series with thresholds)
+  1. CPU Usage (Time Series with thresholds)
 
-* Memory Usage (Stat + Sparkline)
+  2. Memory Usage (Stat + Sparkline)
 
-* Disk Usage (Gauge visualization)
+  3. Disk Usage (Gauge visualization)
 
 - Threshold-based alerting for CPU utilization
 
@@ -106,20 +108,20 @@ containerized-monitoring-stack/
 ## Running the Project
 
 - Start the monitoring stack:
-```bash
-docker compose up --build
-```
+  ```bash
+     docker compose up --build
+  ```
 - Access the services:
 
-* Prometheus → http://localhost:9090
+  1. Prometheus → http://localhost:9090
 
-* Grafana → http://localhost:3000
+  2. Grafana → http://localhost:3000
 
 - Default Grafana credentials:
-```bash
-Username: admin
-Password: admin
-```
+  ```bash
+     Username: admin
+     Password: admin
+  ```
 
 ## DevOps Concepts Demonstrated
 
