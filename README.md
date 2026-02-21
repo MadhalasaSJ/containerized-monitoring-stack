@@ -1,4 +1,4 @@
-# Containerized Monitoring Stack (Prometheus + Grafana)
+# Containerized Monitoring Stack with Prometheus and Grafana
 
 ## Overview
 
